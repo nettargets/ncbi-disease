@@ -56,3 +56,13 @@ agreement NN I-NP I-NP
 ```
 
 The `conlleval` script is originally developed for evaluating BioCreative's chunking task, Here, in the sample, `NP` from the sample means `noun` and `VP` means `verb`. 'B-', 'I-' and 'O-' parts represent the 'beginning', 'inside', and 'outside'. Please refer to [here](https://en.wikipedia.org/wiki/Inside%E2%80%93outside%E2%80%93beginning_(tagging)) for more info
+
+# Output
+
+```
+$ ./script/conlleval < data/sample.txt 
+processed 8 tokens with 5 phrases; found: 5 phrases; correct: 5.
+accuracy: 100.00%; precision: 100.00%; recall: 100.00%; FB1: 100.00
+               NP: precision: 100.00%; recall: 100.00%; FB1: 100.00  4
+               VP: precision: 100.00%; recall: 100.00%; FB1: 100.00  1
+```
